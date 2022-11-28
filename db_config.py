@@ -1,7 +1,7 @@
 from pymongo import MongoClient
 
 
-def get_db(collection = 'abc', db= 'dump2data'):
+def get_db(collection = 'abc'):
     try:
         conn = MongoClient()
         db = conn.dump2data
