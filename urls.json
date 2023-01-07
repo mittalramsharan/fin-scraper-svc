@@ -1,0 +1,3 @@
+{"equty" : "https://www.nseindia.com/api/option-chain-equities?symbol=PAGEIND",
+"indecies":"https://www.nseindia.com/api/option-chain-indices?symbol=BANKNIFTY"
+"" :"https://www.nseindia.com/api/quote-derivative?symbol=WIPRO"}

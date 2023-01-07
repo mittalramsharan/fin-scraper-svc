@@ -34,7 +34,7 @@ def get_option_chain_data(headers, cookies, symbol, url_without_symbol, db):
             no_error = False
         except Exception as err:
             no_error = True
-            time.sleep(60)
+            time.sleep(5)
             try:
                 cookies = requests.get(main_url, headers=headers)
             except:
@@ -55,5 +55,5 @@ while(True):
         #     print ("error in symbol " + symbol)
     for index_symbol in indecis_symbol_list:
         get_option_chain_data( headers, cookies, index_symbol,"https://www.nseindia.com/api/option-chain-indices?symbol=",  "indices_op_9")
-    time.sleep(30)
+    time.sleep(2)
 # print(bank_nifty_oi_data.json())
